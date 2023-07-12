@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ *{
+  box-sizing: border-box;
+ }
+/* navbar */
+h1{
+  font-size: 2.7rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header > h1{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 25px;
+  color: #B17C80;
+}
+nav{
+  width: auto;  
+  text-align: center;
+}
+nav ul{
+  list-style: none;
+  text-align: center;
+  float: right;
+}
+nav li{
+  display: inline-block;
+  padding: 0 10px;
+  
+  /* border: 1px solid red; */
+  
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  color: #1c1b1b;
+}
+nav li a span:hover{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px
+}
+/* ------------------------------------------- */
+
+ .split-screen{
+  position: relative;
+  width: 100vw;
+  min-height: 90vh;
+  overflow: hidden;
+ }
+ .layer{
+  background: #EDEDED;
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  /* border: 1px red solid; */
+ }
+ .layer .content-wrap{
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3em;
+ }
+ .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 16em 8em;
+ }
+ .layer .content-wrap .content-wrap-right{
+    align-content: end;
+ }
+ .layer .content-wrap .content-wrap-left{
+    align-content: start;
+ }
+ .layer img{
+  position: absolute;
+  width: 100%;
+  max-width: 40em;
+  top: 50%;
+  left: 48.5%;
+  transform: translate(-50%,-50%);
+ }
+ .right{
+  background-color: #EDEDED;
+  z-index: 1;
+ }
+ .right .content-wrap{
+  justify-content: right;
+ }
+ .left{
+  z-index: 2;
+  width: 50vw;
+  color: #1c1b1b;
+ }
+ .layer h1{
+  max-width: 9em;
+  font-size: 2.8em;
+  z-index: 2;
+ }
+ .layer p{
+  max-width: 15em;
+  font-size: 1.2em;
+  z-index: 3;
+  /* display: none; */
+ }
