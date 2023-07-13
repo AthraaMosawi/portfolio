@@ -10,11 +10,13 @@ wrapper.addEventListener('mousemove', event => {
     topLayer.style.width = event.clientX + 'px';
     designerDes.style.display = "block";
     webDes.style.display = "block";
+    // botLayer.style.display = "none";
 });
 contentWrap.addEventListener('mouseleave', (e) => {
     topLayer.style.width = 50 + 'vw';
     designerDes.style.display = "none";
     webDes.style.display = "none";
+    botLayer.style.display = "block";
 });
 // wrapper.addEventListener('mousemove', event => {
 //     // botLayer.style.width = event.clientX + 'px';
@@ -23,4 +25,16 @@ contentWrap.addEventListener('mouseleave', (e) => {
 // contentWrap.addEventListener('mouseleave', (e) => {
 //     // topLayer.style.width = 50 + 'vw';
 //     webDes.style.display = "none";
+// });
+// wrapper.addEventListener('mousemove', event => {
+//     botLayer.style.width = event.clientX + 'px';
+//     webDes.style.display = "block";
+//     designerDes.style.display = "block";
+//     topLayer.style.display = "none";
+// });
+// contentWrap.addEventListener('mouseleave', (e) => {
+//     botLayer.style.width = 50 + 'vw';
+//     webDes.style.display = "none";
+//     designerDes.style.display = "none";
+//     topLayer.style.display = "block";
 // });

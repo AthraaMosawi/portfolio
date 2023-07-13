@@ -1,6 +1,7 @@
 body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #191A2D;
  }
  *{
   box-sizing: border-box;
@@ -16,15 +17,16 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* background-color: #fff; */
 }
-header > h1{
+/* header > h1{
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
   padding-left: 25px;
   color: #B17C80;
-}
+} */
 nav{
   width: auto;  
   text-align: center;
@@ -32,35 +34,38 @@ nav{
 nav ul{
   list-style: none;
   text-align: center;
-  float: right;
 }
 nav li{
   display: inline-block;
-  padding: 0 10px;
-  
-  /* border: 1px solid red; */
+  padding: 0 60px;
+  line-height: 48px;
   
 }
 nav li a{
   text-decoration: none;
-  color: white;
   font-size: 1.2rem;
-  color: #1c1b1b;
+  color: #ffffff;
+  
 }
-nav li a span:hover{
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 3px
+nav li a:hover{
+  padding-bottom: 8px;
+  border-bottom: 2px solid #B17C80;
+  /* line-height: 48px;
+  /* border: 1px solid #B17C80;
+  border-radius: 50px;
+  width: 20px; */
 }
 /* ------------------------------------------- */
 
  .split-screen{
   position: relative;
   width: 100vw;
-  min-height: 90vh;
+  min-height: 80vh;
   overflow: hidden;
  }
  .layer{
-  background: #EDEDED;
+  /* background: #EDEDED; */
+  background: #191A2D;
   position: absolute;
   width: 100vw;
   min-height: 100vh;
@@ -102,8 +107,9 @@ nav li a span:hover{
   transform: translate(-50%,-50%);
  }
  .right{
-  background-color: #EDEDED;
+  background-color: #191A2D;
   z-index: 1;
+  color: #fff;
  }
  .right .content-wrap{
   justify-content: right;
@@ -111,7 +117,7 @@ nav li a span:hover{
  .left{
   z-index: 2;
   width: 50vw;
-  color: #1c1b1b;
+  color: #fff;
  }
  .layer h1{
   max-width: 9em;
@@ -138,6 +144,7 @@ nav li a span:hover{
   justify-content: center;
   align-items: center;
   margin: 8%;
+  color: #fff;
   /* border: 1px red solid; */
  }
  .aboutComp{
@@ -154,9 +161,10 @@ nav li a span:hover{
 }
  .skillsContainer {
   width: 70%;
-  background-color: #ddd;
+  /* background-color: #ddd; */
+  background-color: #673136;
   border-radius: 25px;
-  height: 15%;
+  height: 55%;
 }
 
 .skills {
@@ -177,11 +185,74 @@ nav li a span:hover{
   flex: 1;
   text-align: right;
 }
+.aboutMeDes{
+  display: flex;
+}
+.downButton{
+  color: white;
+  z-index: 9;
+  text-align: center;
+  padding: 10px;
+  display: inline;
+  width: 100px;
+}
+/* ------------------svg------------------- */
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
 
-.html {width: 70%; background-color: #B17C80; border-radius: 25px;}
-.css {width: 80%; background-color: #B17C80; border-radius: 25px;}
-.js {width: 65%; background-color: #B17C80; border-radius: 25px;}
-.php {width: 60%; background-color: #B17C80; border-radius: 25px;}
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+/* -------------------svg---------------------- */
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+.html {width: 70%; height: 100%; background-color: #B17C80; border-radius: 25px;}
+.css {width: 80%; height: 100%; background-color: #B17C80; border-radius: 25px;}
+.js {width: 65%; height: 100%; background-color: #B17C80; border-radius: 25px;}
+.php {width: 60%; height: 100%; background-color: #B17C80; border-radius: 25px;}
 
 /* @media screen and (min-width: 1181px)  {
   .whatIDo{
@@ -225,7 +296,7 @@ nav li a span:hover{
     font-size: 0.3rem;
     position: absolute;
     top: 12em;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
  .layer img{
     position: absolute;
@@ -233,7 +304,7 @@ nav li a span:hover{
     left: 48.5%;
     transform: translate(-50%,-50%);
     width: 15rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
  .split-screen{
   position: relative;
@@ -310,16 +381,16 @@ nav li a span:hover{
     min-height: 0vh;
     font-size: 0.9rem;
     top: 5em;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
  .layer img{
     width: 40rem;
     top: 40%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .split-screen{
    min-height: 80vh;
-   border: 1px solid #1c1b1b;
+   /* border: 1px solid #1c1b1b; */
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -327,16 +398,16 @@ nav li a span:hover{
     min-height: 0vh;
     font-size: 0.5rem;
     top:22em;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
  .layer img{
     width:28rem;
     top: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .split-screen{
    min-height: 50vh;
-   border: 1px solid greenyellow;
+   /* border: 1px solid greenyellow; */
   }
 }
 @media screen and (max-width: 375px) and (min-width: 280px) {
@@ -344,16 +415,16 @@ nav li a span:hover{
     min-height: 0vh;
     font-size: 0.22rem;
     top: 14em;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
  .layer img{
     width: 12rem;
     top: 15%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .split-screen{
    min-height: 30vh;
-   border: 1px solid blueviolet;
+   /* border: 1px solid blueviolet; */
   }
 }
 /* @media screen and (max-width: 773px)  {
@@ -386,23 +457,32 @@ nav li a span:hover{
     min-height: 0vh;
     font-size: 0.5rem;
     top: 6em;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
  .layer img{
     width:28rem;
     top: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .split-screen{
    min-height: 50vh;
-   border: 1px solid #b17c80;
+   /* border: 1px solid #b17c80; */
   }
- .whatIDo{
+  .aboutMeDes{
     flex-direction: column;
     justify-content: left;
     align-items: left;
   }
   .skillsComp{
-    width: 100%;
+    width: 90%;
   }
+ .arrows {
+	width: 60px;
+	height: 72px;
+/* 	position: absolute; */
+	top: 55%;
+	margin-left: -30px;
+	
 }
+}
+
