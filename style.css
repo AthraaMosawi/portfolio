@@ -75,7 +75,7 @@ nav li a span:hover{
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  padding: 0 3em;
+  padding: 0 1em;
  }
  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
   position: absolute;
@@ -122,5 +122,287 @@ nav li a span:hover{
   max-width: 15em;
   font-size: 1.2em;
   z-index: 3;
+  display: none;
   /* display: none; */
  }
+ /* @media screen and (max-width: 844px) and (min-width: 390px) {
+  .layer .content-wrap > h1, .layer .content-wrap > p{
+    color: rgb(54, 145, 115);
+  }
+} */
+ 
+ /*git branch -M main*/
+ .whatIDo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 8%;
+  /* border: 1px red solid; */
+ }
+ .aboutComp{
+  flex: 1;
+ }
+.skillsComp{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px red solid; */
+}
+ .skillsContainer {
+  width: 70%;
+  background-color: #ddd;
+  border-radius: 25px;
+  height: 15%;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.skillClass{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: left;
+  /* border: 1px red solid; */
+}
+.skillClass p{
+  flex: 1;
+  text-align: right;
+}
+
+.html {width: 70%; background-color: #B17C80; border-radius: 25px;}
+.css {width: 80%; background-color: #B17C80; border-radius: 25px;}
+.js {width: 65%; background-color: #B17C80; border-radius: 25px;}
+.php {width: 60%; background-color: #B17C80; border-radius: 25px;}
+
+/* @media screen and (min-width: 1181px)  {
+  .whatIDo{
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  .skillsComp{
+    width: 100%;
+  }
+  .layer img{
+    position: absolute;
+    top: 25%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    width: 15rem;
+  }
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.4rem;
+    position: absolute;
+    top: 10em;
+   }
+   p{
+    display: none;
+   }
+} */
+@media screen and (max-width: 844px) and (min-width: 390px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    width: 100vw;
+    min-height: 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 12em;
+    border: 1px solid red;
+  }
+ .layer img{
+    position: absolute;
+    top: 17.7%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    width: 15rem;
+    border: 1px solid red;
+  }
+ .split-screen{
+  position: relative;
+  width: 100vw;
+  min-height: 35vh;
+  overflow: hidden;
+ }
+ .whatIDo{
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  .skillsComp{
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 667px) and (min-width: 375px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    width: 100vw;
+    min-height: 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 9em;
+    border: 1px solid red;
+  }
+ .layer img{
+    position: absolute;
+    top: 17.7%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    width: 15rem;
+    border: 1px solid red;
+  }
+  .split-screen{
+   position: relative;
+   width: 100vw;
+   min-height: 35vh;
+   overflow: hidden;
+  }
+} */
+/* @media screen and (max-width: 896px) and (min-width: 414px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.33rem;
+    top: 11em;
+    border: 1px solid blue;
+  }
+ .layer img{
+    top: 15.5%;
+    border: 1px solid red;
+  }
+  .split-screen{
+   min-height: 32vh;
+   border: 1px solid brown;
+  }
+} */
+@media screen and (max-width: 740px) and (min-width: 360px) {
+ .whatIDo{
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  .skillsComp{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 820px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.9rem;
+    top: 5em;
+    border: 1px solid blue;
+  }
+ .layer img{
+    width: 40rem;
+    top: 40%;
+    border: 1px solid red;
+  }
+  .split-screen{
+   min-height: 80vh;
+   border: 1px solid #1c1b1b;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.5rem;
+    top:22em;
+    border: 1px solid blue;
+  }
+ .layer img{
+    width:28rem;
+    top: 25%;
+    border: 1px solid red;
+  }
+  .split-screen{
+   min-height: 50vh;
+   border: 1px solid greenyellow;
+  }
+}
+@media screen and (max-width: 375px) and (min-width: 280px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.22rem;
+    top: 14em;
+    border: 1px solid blue;
+  }
+ .layer img{
+    width: 12rem;
+    top: 15%;
+    border: 1px solid red;
+  }
+  .split-screen{
+   min-height: 30vh;
+   border: 1px solid blueviolet;
+  }
+}
+/* @media screen and (max-width: 773px)  {
+  .layer img{
+    position: absolute;
+    top: 25%;
+    left: 48.5%;
+    transform: translate(-50%,-50%);
+    width: 22rem;
+  }
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.55rem;
+    position: absolute;
+    top: 8em;
+   }
+
+   .split-screen{
+    min-height: 50vh;
+    border: 1px solid aqua;
+   }
+} 375 */
+@media screen and (max-width: 768px) and (min-width: 450px) {
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.5rem;
+    top: 6em;
+    border: 1px solid blue;
+  }
+ .layer img{
+    width:28rem;
+    top: 25%;
+    border: 1px solid red;
+  }
+  .split-screen{
+   min-height: 50vh;
+   border: 1px solid #b17c80;
+  }
+ .whatIDo{
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  .skillsComp{
+    width: 100%;
+  }
+}
