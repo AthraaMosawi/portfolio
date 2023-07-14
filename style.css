@@ -18,7 +18,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: #fff; */
+  background-color: #121422;
 }
 /* header > h1{
   color: black;
@@ -38,7 +38,7 @@ nav ul{
 }
 nav li{
   display: inline-block;
-  padding: 0 60px;
+  padding: 0 20px;
   line-height: 48px;
   
 }
