@@ -38,3 +38,31 @@ contentWrap.addEventListener('mouseleave', (e) => {
 //     designerDes.style.display = "none";
 //     topLayer.style.display = "block";
 // });
+
+//tabs:
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const tabId = tab.getAttribute('data-tab');
+
+    tabs.forEach(t => {
+      if (t === tab) {
+        t.classList.add('active');
+      } else {
+        t.classList.remove('active');
+      }
+    });
+
+    tabContents.forEach(content => {
+      if (content.id === tabId) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+  });
+});
+
+

@@ -6,6 +6,9 @@
     <title>Athraa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="worksStyle.css">
+    <link href="./fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome/css/solid.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -47,7 +50,7 @@
             </svg>
         </div>
     </section>
-    <section>
+    <!-- <section>
         <div class="whatIDo">
             <div>
                 <h1>About Me</h1>
@@ -91,26 +94,112 @@
             </div>
             
         </div>
-    </section>
+    </section> -->
+    <div class="heading">About Me</div>
+    <div class="aboutus-section">
+            <div class="aboutus">
+                <h2 class="aboutus-title">I'm Athraa Mohammed</h2>
+                <p class="aboutus-text">I’m an ambitious graphic and web designer with an excellent eye for detail. I take great pride in the quality and presentation of my work, and have worked in a variety of projects in a range of sectors. I love turning creative ideas into reality and putting in design touches that have lasting effects.</p>
+                <a class="aboutus-more" href="#footer">More</a>
+            </div>
+                
+            <div class="skill-area">
+                <h2 class="aboutus-title">Skills</h2>
+                <div class="skill-share-inner">
+                    <ul>
+                        <li><img src="./img/illustrator.png" alt="Icons Images"></li>
+                        <li><img src="./img/photoshop.png" alt="Icons Images"></li>
+                        <li><img src="./img/indesign.png" alt="Icons Images"></li>
+                        <li><img src="./img/figma.png" alt="Icons Images"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./img/canva.png" alt="Icons Images"></li>
+                        <li><img src="./img/js.png" alt="Icons Images"></li>
+                        <li><img src="./img/html.png" alt="Icons Images"></li>
+                        <li><img src="./img/css-3.png" alt="Icons Images"></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
     <div class="wrapper">
-        <div class="title">
-          My Portfolio
-        </div>
+        <div class="heading">Prejects</div>
         <div class="tabs_wrap">
-          <ul>
-            <li data-tabs="male">Male</li>
-            <li data-tabs="both" class="active">Both</li>
+          <ul class="tabs">
+            <li data-tab="web" class="active tab">Web Design</li>
+            <li data-tab="graphic" class="tab">Graphic Design</li>
           </ul>
         </div>
-        <div class="projects">
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
-            <div class="item"><img src="./img/me-designer.png" alt="sc"></div>
+        <div >
+            <section id="web" class="tab-content web-design">
+                <article>
+                    <h2>GDG Najaf</h2>
+                    <img src="./img/web3.png" alt="ads-image">
+                    <p>Google Developer Groups - Najaf Website.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </article>
+                <article>
+                    <h2>Warith Al-Anbia Org</h2>
+                    <img src="./img/web2.png" alt="ads-image">
+                    <p>Warith Al-Anbia Organization UI/UX Design</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </article>
+                <article>
+                    <h2>AKC Organization</h2>
+                    <img src="./img/web5.png" alt="ads-image">
+                    <p>AKC Organization UI/UX Design.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </article>
+            </section>
+            <section id="graphic" class="tab-content web-design">
+                <article>
+                    <h2>Smart Cube Company</h2>
+                    <img src="./img/sc.png" alt="ads-image">
+                    <p>Logo and identity system, brand guideline.</p>
+                    <a href="#"><i class="fa-brands fa-behance"></i></i></a>
+                </article>
+                <article>
+                    <h2>The Code People Academy</h2>
+                    <img src="./img/tcp-01.jpg" alt="ads-image">
+                    <p>Logo and identity system, brand guideline.</p>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </article>
+                <article>
+                    <h2>The Iraqi Barber</h2>
+                    <img src="./img/tib-01.jpg" alt="ads-image">
+                    <p>Logo and identity system, brand guideline.</p>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </article>
+            </section>
         </div>
     </div>
+    <div class="footer-form-container">
+    <form class="form-container">
+        <div class="headline"><span>Contact me</span></div>
+        <div class="form-line">
+            <input type="text" class="form-input" placeholder="Name" required>
+        </div>
+        <div class="form-line">
+            <input type="text" class="form-input" placeholder="Your email" required>
+        </div>
+        <div class="form-line">
+            <input type="text" class="form-input" placeholder="Subject" required>
+        </div>
+        <div class="form-line">
+            <textarea class="form-input"  placeholder="Message" required></textarea>
+        </div>
+
+        <input type="button" class="form-button" value="Submit">
+    </form>
+</div>
+    <footer id="footer">
+        <div class="socialmedia">
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-behance"></i>
+        </div>
+        <p>© Athraa Mohammed 2023 </p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
