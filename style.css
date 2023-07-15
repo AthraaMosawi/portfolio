@@ -287,14 +287,18 @@ nav li a:hover{
    }
 } */
 @media screen and (max-width: 844px) and (min-width: 390px) {
+  nav li a{
+    text-decoration: none;
+    font-size: 0.3rem;
+    color: #751c1c;
+  }
+  .arrows{
+    top: 39%;
+  }  
   .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
     width: 100vw;
-    min-height: 0vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 0.3rem;
+    height: 70vh;
+    font-size: 0.5rem;
     position: absolute;
     top: 12em;
     /* border: 1px solid red; */
@@ -304,7 +308,7 @@ nav li a:hover{
     top: 17.7%;
     left: 48.5%;
     transform: translate(-50%,-50%);
-    width: 15rem;
+    width: 10rem;
     /* border: 1px solid red; */
   }
  .split-screen{
@@ -374,6 +378,25 @@ nav li a:hover{
   }
   .skillsComp{
     width: 100%;
+  }
+  nav ul li a{
+    font-size: 0.8rem;
+  }
+  .layer .content-wrap .content-wrap-right, .layer .content-wrap .content-wrap-left{
+    min-height: 0vh;
+    font-size: 0.1rem;
+    top: 14em;
+    /* border: 1px solid blue; */
+  }
+ .layer img{
+    width: 8rem;
+    top: 75%;
+    /* border: 1px solid red; */
+  }
+  .split-screen{
+   height: 35vh;
+
+   /* border: 1px solid blueviolet; */
   }
 }
 
