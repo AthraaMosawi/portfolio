@@ -42,6 +42,11 @@ contentWrap.addEventListener('mouseleave', (e) => {
 //tabs:
 const tabs = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tab-content');
+const tabDesign = document.querySelector('.web-design')
+
+addEventListener("load", () => {
+  tabDesign.classList.add('active');
+});
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -50,6 +55,7 @@ tabs.forEach(tab => {
     tabs.forEach(t => {
       if (t === tab) {
         t.classList.add('active');
+        
       } else {
         t.classList.remove('active');
       }
@@ -135,3 +141,4 @@ if (msg.value == "") {
   return false;
 }
 }
+
